@@ -36,11 +36,11 @@
 
             var saida = "";
 
-            saida += "Modelo do Dispositivo: " += devide.model;
-            saida += "<br> Sistema operacional: " += devide.platform;
-            saida += "<br> Versão do SO: " += devide.version;
-            saida += "<br> Fabricante: " += devide.manufacturer;
-            saida += "<br> Serial: " += devide.serial;
+            saida += "Modelo do Dispositivo: " += device.model;
+            saida += "<br> Sistema operacional: " += device.platform;
+            saida += "<br> Versão do SO: " += device.version;
+            saida += "<br> Fabricante: " += device.manufacturer;
+            saida += "<br> Serial: " += device.serial;
 
             $("#exibeHardware").html(saida);
         }
@@ -140,15 +140,16 @@
             <button id="btn3" onclick="rede()"> Exibe Rede </button>
             <button id="btn4" onclick="bateria()"> Exibe Hardware </button>
             <button id="btn6" onclick="location.href='index.html#principal'"> Voltar </button>
-        
-            <div data-role="footer" id="rodape">
-                <h1> App Sensores 1.1 </h1>    
-            </div>
         </div>
+        
+        <div data-role="footer" id="rodape">
+            <h1> App Sensores 1.1 </h1>    
+        </div>
+    </div>                
+        
 
-        <script type="text/javascript" src="js/jquery.min.js"></script>
-        <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
-        <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
 </body>
-
 </html>
